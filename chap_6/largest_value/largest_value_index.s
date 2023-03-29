@@ -20,7 +20,7 @@ _start:
   je endloop
 
 myloop:
-  movq mynumbers(,%rbx,8), %rax
+  movq mynumbers-8(,%rbx,8), %rax
 
 #Is rdi bigger than rax?
   cmp %rdi, %rax
