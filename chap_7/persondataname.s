@@ -18,12 +18,13 @@ clname:
   .ascii "Clint Lewis\0"
 
 people:
+#       Name    LB   SH EC SC Sx HC HGT  Age
   .quad jcname, 101, 11, 3, 3, 1, 1, 54, 44
-  .quad hdname, 120, 11, 1, 1, 2, 1, 61, 32
-  .quad kdname, 140, 12, 4, 2, 3, 0, 76, 18
-  .quad rcname, 160,  8, 3, 4, 4, 0, 68, 32
-  .quad inname, 180,  8, 1, 1, 2, 1, 81, 23
-  .quad clname, 200, 10, 5, 5, 3, 0, 76, 20
+  .quad hdname, 120, 11, 1, 1, 1, 2, 61, 32
+  .quad kdname, 140, 12, 4, 2, 0, 3, 76, 18
+  .quad rcname, 160,  8, 3, 4, 0, 1, 68, 32
+  .quad inname, 180,  8, 1, 1, 1, 2, 81, 23
+  .quad clname, 200, 10, 5, 5, 0, 3, 76, 20
 endpeople:
 
 
