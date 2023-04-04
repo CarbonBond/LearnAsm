@@ -5,7 +5,7 @@ mytext:
 # 17 uppercase characters
 
 .section .text
-  _start:
+_stringstart:
     #Initialize
 #Point to string
   movq $mytext, %rbx

@@ -15,7 +15,7 @@ rcname:
 inname:
   .ascii "Isaac Newton\0"
 clname:
-  .ascii "Clint Lewis\0"
+  .ascii "Clint Jonny Lewis\0"
 
 people:
 #       Name    LB   SH EC SC Sx HC HGT  Age
