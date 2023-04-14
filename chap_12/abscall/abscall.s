@@ -1,9 +1,10 @@
-.globl _start
+.globl main
 .section .text
-_start:
+main:
 #Rdi holds first param
   movq $-5, %rdi
   call abs
+return:
 
 #Returns in rax
   movq %rax, %rdi
