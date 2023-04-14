@@ -7,7 +7,7 @@ multifunc:
   call isOdd
 # 1 is odd, 0 is even
   cmp $1, %rax
-  jmp odd
+  je odd
 
 even:
   call factorial

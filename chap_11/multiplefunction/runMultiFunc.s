@@ -1,11 +1,11 @@
 .globl _start
 .section .data
 value:
-  .quad 5
+  .quad 4
 
 .section .text
 _start:
-  movq $value, %rdi
+  movq value, %rdi
   call multifunc
   movq %rax, %rdi
   movq $60, %rax
