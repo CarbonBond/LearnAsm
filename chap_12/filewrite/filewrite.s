@@ -6,7 +6,7 @@ filename:
 openmode:
   .ascii "w\0"
 formatstring1:
-  .ascii "The age of %s is %d.\n\o"
+  .ascii "The age of %s is %d.\n\0"
 sallyname:
   .ascii "Sally\0"
 sallyage:
@@ -14,7 +14,7 @@ sallyage:
 formatstring2:
   .ascii "%d and %d are %s's favorite numbers.\n\0"
 joshname:
-  .ascii "Josh\o"
+  .ascii "Josh\0"
 joshfavoritefirst:
   .quad 7
 josotfavoritesecond:
