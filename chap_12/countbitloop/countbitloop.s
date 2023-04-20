@@ -1,16 +1,18 @@
 .globl main
 .section .data
 promptformat:
-  .ascii "Enter a number, then press return.\n\0"
+  .ascii "Enter a number followed by a 1 to exit, 0 to continue, then press return.\n\0"
 
 scanformat:
-  .ascii "%d\0"
+  .ascii "%d %d\0"
 
 resultformat:
   .ascii "The result is %d. \n\0"
 
 .section .text
 .equ LOCAL_NUMBER, -8
+.equ EXIT_NUMBER, -16
+
 main:
   #Two local values
   enter $16, $0
@@ -26,6 +28,7 @@ mainloop:
   movq stdin, %rdi
   movq $scanformat, %rsi
   leaq LOCAL_NUMBER(%rbp), %rdx
+  leaq EXIT_NUMBER(%rbp), %rcx
   movq $0, %rax
   call fscanf
 
@@ -38,8 +41,10 @@ mainloop:
   movq $0, %rax
   call fprintf
   
-  loop mainloop
+  cmpq $0, EXIT_NUMBER(%rbp)
+  je mainloop
 
   leave
-  ret
 
+  movq $0, %rax
+  ret
