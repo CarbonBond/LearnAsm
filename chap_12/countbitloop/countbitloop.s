@@ -1,17 +1,17 @@
 .globl main
 .section .data
 promptformat:
-  .ascii "Enter a number, then press return.\n\0"
+  .string "Enter a number, then press return.\n"
 exitformat:
-  .ascii "Do you want to exit? [y]/n\n\0"
+  .string "Do you want to exit? [y]/n\n"
 
 scanformat:
-  .ascii "%d\0"
+  .string "%d"
 charformat:
-  .ascii "%c\0"
+  .string "%c"
 
 resultformat:
-  .ascii "The result is %d. \n\0"
+  .string "The result is %d. \n"
 
 .section .text
 .equ LOCAL_NUMBER, -8
