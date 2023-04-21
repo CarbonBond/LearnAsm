@@ -1,7 +1,7 @@
 .globl main
 .type sallyage, @object
 .type joshfavoritefirst, @object
-.type josotfavoritesecond, @object
+.type joshfavoritesecond, @object
 
 .section .data
 filename:
@@ -20,7 +20,7 @@ joshname:
   .ascii "Josh\0"
 joshfavoritefirst:
   .quad 7
-josotfavoritesecond:
+joshfavoritesecond:
   .quad 13
 
 .section .text
@@ -47,7 +47,7 @@ main:
   movq -8(%rbp), %rdi
   movq $formatstring2, %rsi
   movq joshfavoritefirst, %rdx
-  movq josotfavoritesecond, %rcx
+  movq joshfavoritesecond, %rcx
   movq $joshname, %r8
   movq $0, %rax
   call fprintf
