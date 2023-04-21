@@ -1,4 +1,7 @@
 .globl main
+.type sallyage, @object
+.type joshfavoritefirst, @object
+.type josotfavoritesecond, @object
 
 .section .data
 filename:
