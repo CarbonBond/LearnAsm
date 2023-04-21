@@ -13,15 +13,15 @@ formatstring1:
 sallyname:
   .ascii "Sally\0"
 sallyage:
-  .quad 53
+  .8byte 53
 formatstring2:
   .ascii "%d and %d are %s's favorite numbers.\n\0"
 joshname:
   .ascii "Josh\0"
 joshfavoritefirst:
-  .quad 7
+  .8byte 7
 joshfavoritesecond:
-  .quad 13
+  .8byte 13
 
 .section .text
 main:
