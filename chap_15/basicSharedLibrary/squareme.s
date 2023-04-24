@@ -1,5 +1,5 @@
 .globl squareme
-.sectino .text
+.section .text
 squareme:
   movq %rdi, %rax
   imulq %rdi
