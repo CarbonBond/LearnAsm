@@ -1,6 +1,6 @@
 .globl main
 .section .data
-.value:
+value:
   .quad 6
 output:
   .string "The square of %d is %d\n"
